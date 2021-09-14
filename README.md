@@ -29,3 +29,15 @@ Update Tempplates
 19. create a template folder inside main project directory
 20. cteate two files inside templates folder (home.html & base.html)
 21.
+
+
+
+
+
+Swiching to postgres on docer allway update requirements.txt
+After update req.txt do docer compes build 
+once done close and run in detach mode
+whil in detach run docker - compose run web python manage py migrate
+use same docer compse web python maagae py createsuperuser
+is use docker copse down                -- all database info will be lost
+to not lose db docer compse stop  and   docker compse start.    --- will work and not dest db  but will eat resourse.
